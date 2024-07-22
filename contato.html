@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contato - Simplicity</title>
+    <link rel="shortcut icon" href="imagens/favicon.png" type="image/png" sizes="64x64">
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+
+<body>
+
+    <header class="topo">
+        <h1><a href="index.html">Simplicity</a></h1>
+        <nav class="menu">
+            <a href="index.html">Home</a>
+            <a href="produtos.html">Produtos</a>
+            <a href="servicos.html">Serviços</a>
+            <a href="contato.html">Contato</a>
+        </nav>
+    </header>
+
+    <main class="conteudo">
+
+        <article class="conteudo-da-pagina">
+            <h2>Contato</h2>
+            <p>
+                Entre em contato conosco para discutir seus projetos e necessidades. Preencha o formulário abaixo e
+                nossa equipe retornará em breve. Estamos ansiosos para trabalhar com você!
+            </p>
+
+            <p>Atenção: os campos <b>Nome</b>, <b>E-mail</b> e <b>Mensagem</b> são <u>obrigatórios</u>.</p>
+
+            <!-- Atributo action tem a ver
+            com o destino/forma de programação
+            de processamento. Por hora, deixe vazio.
+            
+            Atributo method é a forma mais segura
+            e recomendada para transmitir os dados.
+            Sempre use em formulários de contato/cadastro.
+            -->
+            <form action="" method="post">
+                <p>
+                    <label for="nome">Nome:</label>
+                    <input required type="text" name="nome" id="nome">
+                </p>
+                <p>
+                    <label for="email">E-mail:</label>
+                    <input required type="email" name="email" id="email">
+                </p>
+                <p>
+                    <label for="telefone">Telefone:</label>
+                    <input type="tel" name="telefone" id="telefone">
+                </p>
+                <p>
+                    <label for="nascimento">Data de nascimento:</label>
+                    <input type="date" name="nascimento" id="nascimento">
+                </p>
+                
+                <p>
+                    <label for="assunto">Assunto:</label>
+                    <select name="assunto" id="assunto">
+                        <option value=""></option>
+                        <option>Informações</option>
+                        <option>Reclamações</option>
+                        <option>Elogios</option>
+                        <option>Outros</option>
+                    </select>
+                </p>
+
+                <p>
+                    <label for="mensagem">Mensagem:</label>
+                    <textarea required name="mensagem" id="mensagem" cols="30" rows="7"></textarea>
+                </p>
+                
+                <button type="submit" id="enviar">
+                    Enviar dados
+                </button>
+
+            </form>
+
+        </article>
+
+    </main>
+
+    <footer class="rodape">
+        <p>
+            Simplicity é um site fictício desenvolvido educacionalmente<br> Senac Penha
+        </p>
+    </footer>
+
+    <!-- 2) Importação do JavaScript do Lightbox -->
+    <script src="lightbox/js/lightbox-plus-jquery.min.js"></script>
+
+</body>
+
+</html>
